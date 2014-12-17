@@ -1,0 +1,76 @@
+header {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background-color: #000;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0 3px 6px #D9D9D9;
+    color: #ffffff;
+}
+
+.PlanOLogo {
+    float: left;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+}
+
+.PlanOLogo span {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 24px;
+	color: #ffffff;
+}
+
+.ProjectList {
+    float: left;
+    width: 350px;
+    height: 50px;
+}
+
+.ProjectListButton {
+    width: 270px;
+    height: 30px;
+    margin: 10px 0 10px 0;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px #fff;
+    text-align: center;
+}
+
+.ProjectListButton span {
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.ProjectListContainer {
+    background-color: #E9EAED;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    width: 270px;
+    height: 60px;
+    box-shadow: 0 1px 5px #333;
+}
+
+.ProjectListContainer li{
+    display: inline-block;
+    margin-left: 10px;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+}
+
+.HeaderButtons {
+    float: right;
+    
+}
+
+section {
+    display: none;
+    clear: both;
+	width: 100%;
+}
+footer {
+    display: none;
+	clear: both;
+	width: 100%;
+}
