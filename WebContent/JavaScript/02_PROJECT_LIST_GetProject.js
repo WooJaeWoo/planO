@@ -2,12 +2,12 @@ window.addEventListener('load', GetProject, false);
 
 var sTemplate =
 "<li>"
-+	"<a>
++	"<a>"
 +   "<div class='ProjectCard'>"
 +		"<span><%=name%></span>"
 +   "</div>"
 +	"</a>"
-+"</li>"
++"</li>";
 
 function MakeProjectCard(template, projectList)
 {
@@ -15,7 +15,7 @@ function MakeProjectCard(template, projectList)
 	projectList.forEach(function(v,i,o) {
 		var tempstr = template;
 		tempstr =
-		template.replace("<%=name%>", v.projectName);	
+		template.replace("<%=name%>", v.name);	
 		result.push(tempstr);
 	});
 	result = result.join("");
@@ -24,18 +24,19 @@ function MakeProjectCard(template, projectList)
 
 function GetProject()
 {
-	var url = "http://localhost:8000/GetProjectServlet";
+	var url = "http://localhost:8080/GetProjectServlet";
 	var request = new XMLHttpRequest();
-	request.open("GET", url, true);
-	request.send("1");
+	request.open("GET", url+"?userId=1", true);
+	request.send(null);
 	request.onreadystatechange = function()
 	{
 		if (request.readyState === 4 && request.status === 200)
 		{
 			var projectData = request.responseText;
 			projectData = JSON.parse(projectData);
-			var projectList = document.querySelector('.ProjecList ul');
-			projectList.innerHTML += MakeProjectCard(sTemplate, projectList);
+			console.log(projectData);
+			var projectList = document.querySelector('.ProjectList ul');
+			projectList.innerHTML += MakeProjectCard(sTemplate, projectData);
 		}
 	};
 }

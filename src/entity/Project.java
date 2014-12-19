@@ -1,21 +1,19 @@
 package entity;
 
-public class Issue {
-	String issueId;
+
+public class Project {
 	String projectId;
-	String seq;
 	String name;
 	String description;
 	String startDate;
 	String finishDate;
 	String validate;
 	
-	public Issue(String issueId, String projectId, String seq, String name,
-			String description, String startDate, String finishDate,
-			String validate) {
-		this.issueId = issueId;
+	
+	
+	public Project(String projectId, String name, String description,
+			String startDate, String finishDate, String validate) {
 		this.projectId = projectId;
-		this.seq = seq;
 		this.name = name;
 		this.description = description;
 		this.startDate = startDate;
@@ -23,16 +21,8 @@ public class Issue {
 		this.validate = validate;
 	}
 
-	public String getIssueId() {
-		return issueId;
-	}
-	
 	public String getProjectId() {
 		return projectId;
-	}
-	
-	public String getSeq() {
-		return seq;
 	}
 	
 	public String getName() {
@@ -50,8 +40,10 @@ public class Issue {
 	public String getFinishDate() {
 		return finishDate;
 	}
-	
+
 	public String getValidate() {
 		return validate;
 	}
+	
+	
 }

@@ -5,32 +5,36 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-import entity.Issue;
+import entity.Project;
 
-public class IssueDao {
+
+
+public class ProjectDao {
 	Connection conn = null;
 	PreparedStatement pstmt = null;
 	ResultSet rs = null;
-	ArrayList<Issue> issueList = new ArrayList<Issue>();
+	ArrayList<Project> projectList = new ArrayList<Project>();
 	int updatedRows = -1;
 	
 	String address = "jdbc:mysql://192.168.56.102/planO?useUnicode=true&characterEncoding=UTF-8";
 	String id = "jojo";
 	String pw = "abcd";
 	
-	public ArrayList<Issue> getIssue(String projectId) {
-		String sql = "SELECT * FROM ISSUE WHERE pId = ?";
+	public ArrayList<Project> getProject(String userId) {
+		String sql = "SELECT * FROM PROJECT p "
+				+ "JOIN USER_PROJECT u "
+				+ "ON p.pId=u.pId WHERE u.uId=?;";
 		
 		try {	
 			Class.forName("com.mysql.jdbc.Driver");
 			conn = DriverManager.getConnection(address, id, pw);
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, projectId);
+			pstmt.setString(1, userId);
 			
 			rs = pstmt.executeQuery();
 			
 			while(rs.next()){
-				issueList.add(new Issue(rs.getString("iId") ,rs.getString("pId"), rs.getString("seq"), rs.getString("name"), rs.getString("descrpition"), rs.getString("startDate"), rs.getString("finishDate"), rs.getString("validate")));
+				projectList.add(new Project(rs.getString("pId") ,rs.getString("name"), rs.getString("descrpition"), rs.getString("startDate"), rs.getString("finishDate"), rs.getString("validate")));
 			}
 			
 		} catch (Exception e) {
@@ -41,7 +45,6 @@ public class IssueDao {
 			if(conn != null) try { conn.close(); } catch (SQLException e) {}				
 		}
 		
-		return issueList;
+		return projectList;
 	}
-
 }
