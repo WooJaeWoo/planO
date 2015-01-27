@@ -63,55 +63,6 @@ section {
     font-size: 13px;
     line-height: 30px;
 }
-.PlanDateFrame {
-    background-color: #000;
-    height: 40px;
-    font-size: 12px;
-    font-weight: 100;
-    color: #777;
-}
-
-.PlanDateFrame > span:nth-child(1) {
-    margin-left: 17%;
-}
-
-.PlanDateFrame > span:nth-child(2) {
-    margin-left: 35%;
-}
-
-.PlanDateFrame > span:nth-child(3) {
-    float: right;
-    margin-right: 35px;
-}
-
-.PlanDate li{
-    float: left;
-    width: 30px;
-    line-height: 25px;
-    color: #ddd;
-}
-
-#ProjectStart {
-    margin-left: 17%;
-}
-
-#ProjectEnd {
-    float: right;
-    margin-right: 80px;
-}
-
-.PlannerBodyFrame {
-    background-color: #000;
-    height: 60px;
-}
-
-.PlannerBodyInnerFrame {
-    float: right;
-    background-color: #fff;
-    width: 80%;
-    height: 60px;
-    margin-right: 3%;
-}
 
 .IssueTitle {
     float: left;
