@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+<<<<<<< HEAD
     <wb-module deploy-name="planO">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
@@ -8,5 +9,12 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/resources"/>
         <property name="java-output-path" value="/planO/target/classes"/>
         <property name="context-root" value="planO"/>
+=======
+    <wb-module deploy-name="planO_">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/planO_/build/classes"/>
+        <property name="context-root" value="planO_"/>
+>>>>>>> 7ebc7db51b4a07cbaf04649c17b31164bb8a8780
     </wb-module>
 </project-modules>
