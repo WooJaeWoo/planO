@@ -1,0 +1,155 @@
+section {
+	width: 100%;
+}
+
+#SectionContainer {
+    margin: 20px 3% 20px 3%;
+    width: 94%;
+    height: 600px;
+}
+
+.PlannerFrame {
+    border-radius: 55px;
+    box-shadow: 5px 5px 5px #444;
+}
+
+.PlannerHeadFrame {
+    position: relative;
+    background-color: #000;
+    border-top-left-radius: 55px;
+    border-top-right-radius: 55px;
+    height: 130px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.ProjectDetail {
+    float: left;
+}
+
+.ProjectName {
+    position: absolute;
+    top: 30px;
+    left: 45px;
+}
+.ProjectName > span:nth-child(1) {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.ProjectName > span:nth-child(2) {
+    font-size: 11px;
+    font-weight: 100;
+    margin-left: 10px;
+    color: #bbb;
+}
+
+.ProjectDescription {
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    width: 350px;
+    line-height: 20px;
+    font-size: 13px;
+    font-weight: 100;
+    color: #ccc;
+}
+
+.Participant {
+    float: right;
+    width: 350px;
+    margin-top: 35px;
+    margin-right: 40px;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+.IssueTitle {
+    float: left;
+    margin-left: 35px;
+    width: 13%;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 60px;
+    color: #fff;
+}
+
+.PlannerTailFrame {
+    background-color: #000;
+    border-bottom-left-radius: 55px;
+    border-bottom-right-radius: 55px;
+    height: 90px;
+}
+
+.PlannerTailInnerFrame {
+    float: right;
+    background-color: #fff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 80%;
+    margin-right: 3%;
+    height: 60px;
+    border-top: 1px dashed #777;
+}
+
+.ViewBy {
+    float: left;
+    width: 140px;
+    height: 30px;
+    margin: 15px 0 0 25px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+.ViewBy span {
+    margin-left: 10px;
+    color: #fff;
+}
+
+.ViewByIcon {
+}
+
+.AddIssue {
+    float: left;
+    margin: 15px 0 0 40%;
+}
+
+.AddIssueIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #777;
+}
+
+.AddIssueText {
+    font-size: 18px;
+    font-weight: 100;
+    color: #777;
+    line-height: 30px;
+    margin: 2px 0 0 10px;
+}
+
+footer {
+    clear: both;
+    margin-top: 15px;
+    margin-bottom: 15px;
+	width: 100%;
+}
+
+#FooterContainer {
+    width: 80%;
+    font-size: 11px;
+    color: #888;
+    margin-left: 10%;
+    line-height: 40px;
+}
+
+#FooterContainer a {
+    color: #666;
+}
+
+#FooterContainer > div:nth-child(1) a {
+    margin: 0 5px 0 5px;
+}

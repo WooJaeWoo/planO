@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>planO</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>getProjectInfo</display-name>
+    <servlet-name>getProjectInfo</servlet-name>
+    <servlet-class>controller.getProjectInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getProjectInfo</servlet-name>
+    <url-pattern>/getProjectInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetProjectInfoController</display-name>
+    <servlet-name>GetProjectInfoController</servlet-name>
+    <servlet-class>controller.GetProjectInfoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetProjectInfoController</servlet-name>
+    <url-pattern>/GetProjectInfoController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>WebServerLauncher</display-name>
+    <servlet-name>WebServerLauncher</servlet-name>
+    <servlet-class>WebServerLauncher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebServerLauncher</servlet-name>
+    <url-pattern>/WebServerLauncher</url-pattern>
+  </servlet-mapping>
+</web-app>
