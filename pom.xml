@@ -14,6 +14,7 @@
 	    <groupId>junit</groupId>
 	    <artifactId>junit</artifactId>
 	    <version>4.11</version>
+	    <scope>test</scope>
 	</dependency>
 	
 	<dependency>
@@ -39,36 +40,42 @@
 	    <groupId>org.apache.tomcat.embed</groupId>
 	    <artifactId>tomcat-embed-core</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.apache.tomcat.embed</groupId>
 	    <artifactId>tomcat-embed-logging-juli</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.apache.tomcat.embed</groupId>
 	    <artifactId>tomcat-embed-jasper</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.apache.tomcat</groupId>
 	    <artifactId>tomcat-jasper</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.apache.tomcat</groupId>
 	    <artifactId>tomcat-jasper-el</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.apache.tomcat</groupId>
 	    <artifactId>tomcat-jsp-api</artifactId>
 	    <version>${tomcat.version}</version>
+	    <scope>provided</scope>
 	</dependency>
   </dependencies>
   
   <build>
-	<finalName>jwp</finalName>
+	<finalName>planO</finalName>
 	<sourceDirectory>src/main/java</sourceDirectory>
 	<testSourceDirectory>src/test/java</testSourceDirectory>
 	<outputDirectory>webapp/WEB-INF/classes</outputDirectory>
@@ -86,6 +93,7 @@
 			<version>2.4</version>
 			<configuration>
 				<warSourceDirectory>webapp</warSourceDirectory>
+				<webXml>webapp/WEB-INF/web.xml</webXml>
 			</configuration>
 		</plugin>
 		<plugin>
