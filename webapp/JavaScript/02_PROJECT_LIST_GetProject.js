@@ -40,13 +40,3 @@ function GetProject()
 		}
 	};
 }
-
-load: function() {
-	$.ajax({
-		type: "get",
-		url: "getProjectInfoController",
-		success: function(data) {
-			console.log(data);
-		}
-	})
-}
